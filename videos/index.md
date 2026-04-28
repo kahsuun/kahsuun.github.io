@@ -1,33 +1,22 @@
 ---
-title: Film
+title: Videos
+layout: page
 ---
 
-<section class="film-section">
-  <div class="film-grid">
+## YouTube Videos
 
-    <div class="film-item">
-      <iframe
-        src="https://www.youtube.com/embed/w2NZ0xFwjS4"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen>
-      </iframe>
-    </div>
+<div class="film-grid">
 
-    <div class="film-item">
-      <iframe
-        src="https://www.youtube.com/embed/7CQn1SZkZtY"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen>
-      </iframe>
-    </div>
+  <a class="film-card" href="https://www.youtube.com/watch?v=w2NZ0xFwjS4" target="_blank">
+    <img src="https://img.youtube.com/vi/w2NZ0xFwjS4/hqdefault.jpg" alt="Video title">
+  </a>
 
-    <div class="film-item">
-      <iframe
-        src="https://www.youtube.com/embed/saJX7Rh90RM"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen>
-      </iframe>
-    </div>
+  <a class="film-card" href="https://www.youtube.com/watch?v=7CQn1SZkZtY" target="_blank">
+    <img src="https://img.youtube.com/vi/7CQn1SZkZtY/hqdefault.jpg" alt="Video title">
+  </a>
 
-  </div>
-</section>
+  <a class="film-card" href="https://www.youtube.com/watch?v=saJX7Rh90RM" target="_blank">
+    <img src="https://img.youtube.com/vi/saJX7Rh90RM/hqdefault.jpg" alt="Video title">
+  </a>
+
+</div>
