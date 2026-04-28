@@ -9,27 +9,27 @@ body {
   margin: 0;
 }
 
-/* VIDEO GRID */
-.video-grid {
+/* FILM GRID */
+.film-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
   gap: 1.5rem;
   margin-top: 2rem;
 }
 
-.video-card {
+.film-card {
   text-decoration: none;
   color: inherit;
 }
 
-.video-card img {
+.film-card img {
   width: 100%;
   aspect-ratio: 16 / 9;
   object-fit: cover;
   border-radius: 12px;
 }
 
-.video-card:hover img {
+.film-card:hover img {
   transform: translateY(-4px);
   box-shadow: 0 10px 25px rgba(0,0,0,0.15);
 }
