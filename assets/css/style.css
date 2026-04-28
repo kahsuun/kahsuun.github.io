@@ -39,5 +39,6 @@
 .about-photo img {
   width: 50%;
   height: auto;
+  border: 5px solid red;
 }
 
