@@ -37,7 +37,10 @@
 }
 
 .about-photo img {
-  max-width: 50%;
-  height: auto;
+  display: block;
+  width: 50% !important;
+  max-width: 600px;
+  height: auto !important;
 }
+
 
