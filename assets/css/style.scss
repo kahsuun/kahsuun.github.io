@@ -44,3 +44,44 @@ body {
   max-width: 50%;
   height: auto;
 }
+
+/* SITE HEADER */
+
+.site-header {
+  width: 100%;
+  padding: 24px 40px;   /* space from page edges */
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Brand name */
+.brand {
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+}
+
+/* Navigation */
+.nav {
+  display: flex;
+  gap: 32px; /* space between tabs */
+}
+
+.nav a {
+  color: #fff;
+  text-decoration: none;   /* removes underline */
+  font-size: 0.95rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  opacity: 0.85;
+  transition: opacity 0.2s ease;
+}
+
+.nav a:hover {
+  opacity: 1;
+}
+
