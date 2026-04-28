@@ -29,15 +29,16 @@
   box-shadow: 0 10px 25px rgba(0,0,0,0.15);
 }
 
+
 .about-photo {
   display: flex;
-  justify-content: center;
-  margin: 2rem 0;
+  justify-content: center; /* centers horizontally */
 }
 
 .about-photo img {
-  width: 50%;
+  display: block;
+  max-width: 50%;
   height: auto;
-  max-width: 600px;
 }
 ``
+
