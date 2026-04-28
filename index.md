@@ -1,16 +1,7 @@
+
 ---
-title: Film
+title: Home
 ---
 
-<section class="film-section">
-  <div class="film-grid">
+Welcome to my site.
 
-    <div class="film-item">
-      <iframe
-        src="https://www.youtube.com/embed/w2NZ0xFwjS4"
-        allowfullscreen>
-      </iframe>
-    </div>
-
-  </div>
-</section>
