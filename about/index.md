@@ -4,7 +4,7 @@ layout: page
 ---
 
 <div class="about-photo">
-  /assets/images/evenlongeraboutmeFULL.jpg
+  <img src="/assets/images/evenlongeraboutmeFULL.jpg" alt="About me photo">
 </div>
 
 ## About Me
