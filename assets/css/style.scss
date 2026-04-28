@@ -9,6 +9,15 @@ body {
   margin: 0;
 }
 
+
+@font-face {
+  font-family: 'Newake';
+  src: url('{{ "/assets/fonts/NewakeFont-Demo.otf" | relative_url }}') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 /* HOME PAGE VIDEO — CENTERED, MEDIUM SIZE */
 .home-video {
   max-width: 700px;     /* controls size — medium, cinematic */
