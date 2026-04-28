@@ -9,6 +9,19 @@ body {
   margin: 0;
 }
 
+/* HOME PAGE VIDEO — CENTERED, MEDIUM SIZE */
+.home-video {
+  max-width: 900px;     /* controls size — medium, cinematic */
+  margin: 4rem auto;    /* centers horizontally + adds breathing room */
+  padding: 0 2rem;      /* keeps space from edges on small screens */
+}
+
+.home-video video {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 16px;
+}
 
 
 .film-list {
