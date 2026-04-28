@@ -56,8 +56,6 @@ body {
   border: none;
 }
 
-/* PHOTO PAGE */
-
 .photo-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -65,16 +63,23 @@ body {
   max-width: 1200px;
   margin: 4rem auto;
   padding: 0 2rem;
+
   justify-items: center;
 }
 
+.photo-card {
+  width: 100%;
+  max-width: 420px;
+}
+
 .photo-card img {
-  display: block;
   width: 100%;
   height: auto;
+  display: block;
   border-radius: 12px;
 }
 
+/* 👇 THIS is what keeps the third PDF on its own row */
 .photo-card.full-row {
   grid-column: 1 / -1;
   display: flex;
