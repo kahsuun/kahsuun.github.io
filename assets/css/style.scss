@@ -49,39 +49,44 @@ body {
 
 .site-header {
   width: 100%;
-  padding: 24px 40px;   /* space from page edges */
 }
 
 .header-inner {
+  max-width: 1200px;          /* keeps content centered */
+  margin: 0 auto;
+  padding: 32px 40px;         /* space from edges */
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 40px;
 }
 
-/* Brand name */
+/* BRAND NAME */
 .brand {
-  font-size: 1.2rem;
-  font-weight: 600;
-  letter-spacing: 0.08em;
+  font-size: 3rem;            /* MUCH bigger */
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  line-height: 1;
+  white-space: nowrap;        /* prevents breaking KAHSUUN */
 }
 
-/* Navigation */
+/* NAVIGATION */
 .nav {
   display: flex;
-  gap: 32px; /* space between tabs */
+  gap: 32px;
+  flex-wrap: wrap;            /* prevents overflow */
 }
 
 .nav a {
   color: #fff;
-  text-decoration: none;   /* removes underline */
-  font-size: 0.95rem;
-  letter-spacing: 0.05em;
+  text-decoration: none;
+  font-size: 1rem;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
   opacity: 0.85;
-  transition: opacity 0.2s ease;
+  white-space: nowrap;
 }
 
 .nav a:hover {
   opacity: 1;
 }
-
