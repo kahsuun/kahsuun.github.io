@@ -37,8 +37,7 @@
 }
 
 .about-photo img {
-  width: 50%;
+  max-width: 50%;
   height: auto;
-  border: 5px solid red;
 }
 
