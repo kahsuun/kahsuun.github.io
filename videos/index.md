@@ -1,24 +1,25 @@
 ---
-title: Film
+title: Videos
+layout: page
 ---
 
-<section class="film-section">
-  <div class="film-grid">
+## YouTube Videos
 
-    <div class="film-item">
-      https://www.youtube.com/embed/w2NZ0xFwjS4
-      </iframe>
-    </div>
+<div class="video-grid">
 
-    <div class="film-item">
-      https://www.youtube.com/embed/7CQn1SZkZtY
-      </iframe>
-    </div>
+  <a class="video-card" href="https://www.youtube.com/watch?v=w2NZ0xFwjS4" target="_blank">
+    <img src="https://img.youtube.com/vi/w2NZ0xFwjS4/hqdefault.jpg" alt="Video title">
+    <span>Video Title 1</span>
+  </a>
 
-    <div class="film-item">
-      https://www.youtube.com/embed/saJX7Rh90RM
-      </iframe>
-    </div>
+  <a class="video-card" href="https://www.youtube.com/watch?v=7CQn1SZkZtY" target="_blank">
+    <img src="https://img.youtube.com/vi/7CQn1SZkZtY/hqdefault.jpg" alt="Video title">
+    <span>Video Title 2</span>
+  </a>
 
-  </div>
-</section>
+  <a class="video-card" href="https://www.youtube.com/watch?v=saJX7Rh90RM" target="_blank">
+    <img src="https://img.youtube.com/vi/saJX7Rh90RM/hqdefault.jpg" alt="Video title">
+    <span>Video Title 3</span>
+  </a>
+
+</div>
