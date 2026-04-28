@@ -3,19 +3,36 @@
 @import "{{ site.theme }}";
 
 
-/* GLOBAL BASE */
+
+/* FORCE DARK BACKGROUND OVER MINIMAL THEME */
+
+/* Page background */
 html,
 body {
   background-color: #000;
-  margin: 0;
-  color: #fff;
 }
 
-/* THEME PANEL OVERRIDE */
-.wrapper,
-.page-content,
-main {
+/* Theme wrapper */
+.wrapper {
   background-color: #000;
+}
+
+/* Main content area */
+.main-content {
+  background-color: #000;
+}
+
+/* Header area */
+.page-header {
+  background-color: #000;
+}
+
+/* Text color for readability */
+body,
+.wrapper,
+.main-content,
+.page-header {
+  color: #fff;
 }
 
 
