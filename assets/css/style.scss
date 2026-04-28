@@ -11,20 +11,17 @@ body {
 
 
 
-/* FILM PAGE – LARGE CENTERED VIDEOS */
 .film-list {
   display: flex;
   flex-direction: column;
   gap: 4rem;
 
-  max-width: 1600px;   /* controls how large the videos get */
+  max-width: 85vw;
   margin: 4rem auto;
-  padding: 0 2rem;    /* padding from page edges */
+  padding: 0 2rem;
 }
 
-/* VIDEO EMBED */
 .film-embed {
-  position: relative;
   width: 100%;
   aspect-ratio: 16 / 9;
 }
@@ -33,8 +30,8 @@ body {
   width: 100%;
   height: 100%;
   border-radius: 16px;
+  border: none;
 }
-
 
 /* ABOUT PHOTO */
 .about-photo {
