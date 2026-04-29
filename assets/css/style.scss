@@ -56,6 +56,16 @@ body {
   border: none;
 }
 
+/* ✅ Mobile fix */
+@media (max-width: 768px) {
+  .film-list {
+    max-width: 100%;
+    padding: 0 1rem;
+  }
+}
+
+/* PHOTO PAGE */
+
 .photo-grid {
   display: grid;
 
