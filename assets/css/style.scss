@@ -117,6 +117,7 @@ body {
   }
 }
 
+
 /* ABOUT PHOTO */
 .about-photo {
   display: flex;
@@ -125,20 +126,21 @@ body {
   width: 100%;
 }
 
-/* Base state */
+/* Base image state */
 .about-photo img {
   width: 140px;
   height: auto;
   cursor: zoom-in;
 
   transition: transform 0.35s ease, opacity 0.2s ease;
+  transform: scale(1);
   transform-origin: center center;
 }
 
-/* Hover expansion — NO layout change */
+/* Hover ON THE CONTAINER, not the image */
 @media (hover: hover) {
-  .about-photo img:hover {
-    transform: scale(4.2);   /* adjust until visually right */
+  .about-photo:hover img {
+    transform: scale(5.5);   /* adjust size here */
     cursor: zoom-out;
     opacity: 0.95;
   }
