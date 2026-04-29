@@ -5,22 +5,31 @@ layout: default
 
 <div class="photo-grid">
 
-  <div class="photo-card">
-    <a href="{{ '/assets/photos/collages/EIGHTMONTHSrevisedCOMP2.pdf' | relative_url }}" target="_blank">
-      <img src="{{ '/assets/photos/thumbnails/EIGHTMONTHSpage1.jpg' | relative_url }}" alt="Photo series 01">
-    </a>
-  </div>
+  <!-- Photo 01 -->
+  <a
+    href="{{ '/assets/photos/collages/EIGHTMONTHSrevisedCOMP2.pdf' | relative_url }}"
+    target="_blank"
+    class="photo-card"
+  >
+    {{ '/assets/photos/thumbnails/EIGHTMONTHSpage1.jpg' | relative_url }}
+  </a>
 
-  <div class="photo-card">
-    <a href="{{ '/assets/photos/collages/HARISHupdated10.11compress3.pdf' | relative_url }}" target="_blank">
-      <img src="{{ '/assets/photos/thumbnails/CHENDApage1.jpg' | relative_url }}" alt="Photo series 02">
-    </a>
-  </div>
+  <!-- Photo 02 -->
+  <a
+    href="{{ '/assets/photos/collages/HARISHupdated10.11compress3.pdf' | relative_url }}"
+    target="_blank"
+    class="photo-card"
+  >
+    {{ '/assets/photos/thumbnails/CHENDApage1.jpg' | relative_url }}
+  </a>
 
-  <div class="photo-card full-row">
-    <a href="{{ '/assets/photos/collages/LAMEGOpresentation.pdf' | relative_url }}" target="_blank">
-      <img src="{{ '/assets/photos/thumbnails/LAMEGOFULLWIDEcollage.png' | relative_url }}" alt="Photo series 03">
-    </a>
-  </div>
+  <!-- Photo 03 (WIDE / FULL ROW) -->
+  <a
+    href="{{ '/assets/photos/collages/LAMEGOpresentation.pdf' | relative_url }}"
+    target="_blank"
+    class="photo-card full-row"
+  >
+    {{ '/assets/photos/thumbnails/LAMEGOFULLWIDEcollage.png' | relative_url }}
+  </a>
 
 </div>
