@@ -91,6 +91,8 @@ body {
 /* ✅ Third PDF: full-width row + centered */
 .photo-card.full-row {
   grid-column: 1 / -1;
+  max-width: 100%;
+  display: flex;
   justify-content: center;
 }
 
