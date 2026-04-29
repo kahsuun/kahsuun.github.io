@@ -105,6 +105,27 @@ body {
   align-items: start;
 }
 
+/* PHOTO PAGE HERO */
+
+.photo-hero {
+  max-width: 1200px;
+  margin: 4rem auto 3rem;
+  padding: 0 2rem;
+}
+
+.photo-hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 16px;
+}
+
+/* Mobile spacing tweak */
+@media (max-width: 768px) {
+  .photo-hero {
+    margin-top: 2rem;
+  }
+}
 
 /* PHOTO GRID */
 .photo-grid {
