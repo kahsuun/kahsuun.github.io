@@ -121,11 +121,20 @@ body {
 .about-photo {
   display: flex;
   justify-content: center;
+  margin: 4rem 0;
 }
 
 .about-photo img {
-  max-width: 50%;
+  width: 140px;              /* VERY small by default */
   height: auto;
+  cursor: pointer;
+  transition: width 0.35s ease;
+}
+
+/* Expanded state */
+.about-photo img.expanded {
+  width: 60%;
+  max-width: 720px;
 }
 
 /* SITE HEADER */
