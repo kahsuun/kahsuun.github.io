@@ -118,30 +118,34 @@ body {
 }
 
 
+
 /* ABOUT PHOTO */
 .about-photo {
   display: flex;
   justify-content: center;
-  margin: 4rem 0;
+  align-items: center;
+
   width: 100%;
+  min-height: 900px;              /* ✅ big enough to contain expanded image */
+  margin: 4rem 0;
 }
 
-/* Base image state */
+/* Image base state */
 .about-photo img {
   width: 140px;
   height: auto;
-  cursor: zoom-in;
 
   transition: transform 0.35s ease, opacity 0.2s ease;
   transform: scale(1);
   transform-origin: center center;
+
+  pointer-events: none;           /* ✅ CRITICAL: hover NEVER attaches to image */
 }
 
-/* Hover ON THE CONTAINER, not the image */
+/* Hover ON CONTAINER ONLY */
 @media (hover: hover) {
   .about-photo:hover img {
-    transform: scale(5.5);   /* adjust size here */
-    cursor: zoom-out;
+    transform: scale(5.5);        /* adjust size here */
     opacity: 0.95;
   }
 }
