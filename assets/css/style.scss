@@ -117,6 +117,7 @@ body {
   }
 }
 
+
 /* ABOUT PHOTO */
 .about-photo {
   display: flex;
@@ -124,23 +125,22 @@ body {
   margin: 4rem 0;
 }
 
+/* Default (small) state */
 .about-photo img {
-  width: 140px;              /* VERY small by default */
+  width: 140px;                 /* very small */
   height: auto;
-  cursor: pointer;
+  cursor: zoom-in;
   transition: width 0.35s ease;
 }
+
+/* Hover = expanded */
 .about-photo img:hover {
-  opacity: 0.9;
-}
-/* Expanded state */
-.about-photo img.expanded {
-  transition: width 0.35s ease, opacity 0.2s ease;
-  width: min(60%, 720px);
-  cursor: zoom-out;
   width: 60%;
   max-width: 720px;
+  cursor: zoom-out;
+  opacity: 0.95;
 }
+
 
 /* SITE HEADER */
 
