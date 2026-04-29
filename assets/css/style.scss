@@ -144,7 +144,7 @@ a.photo-card.full-row img {
 /* Hover expand — SIMPLE and STABLE */
 @media (hover: hover) {
   .about-img:hover {
-    transform: scale(2.5);       /* adjust size here */
+    transform: scale(4.5);       /* adjust size here */
     cursor: zoom-out;
     opacity: 0.95;
   }
