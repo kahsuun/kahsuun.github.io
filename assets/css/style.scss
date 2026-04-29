@@ -59,14 +59,14 @@ body {
 
 /* Video fills viewport */
 .home .home-video {
-  height: 60vh;
-  overflow: hidden;
+  height: auto;
+  max-height: 60vh;
 }
 
 .home .home-video video {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;
+  object-fit: contain;
 }
 
 /* VIDEOS PAGE HEADER IMAGE */
