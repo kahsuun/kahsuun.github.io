@@ -118,6 +118,7 @@ body {
 }
 
 
+
 /* ABOUT PHOTO */
 .about-photo {
   display: flex;
@@ -125,29 +126,24 @@ body {
   margin: 4rem 0;
 }
 
-/* Default (small) state */
+/* Base (small) state */
 .about-photo img {
-  width: 140px;                 /* very small */
+  width: 140px;
   height: auto;
   cursor: zoom-in;
-  transition: width 0.35s ease;
+  transition: width 0.35s ease, opacity 0.2s ease;
 }
 
-/* Hover = expanded */
-.about-photo img:hover {
-  width: 60%;
-  max-width: 720px;
-  cursor: zoom-out;
-  opacity: 0.95;
-}
-
+/* Apply hover behavior ONLY on devices that support hover */
 @media (hover: hover) {
   .about-photo img:hover {
     width: 60%;
     max-width: 720px;
     cursor: zoom-out;
+    opacity: 0.95;
   }
 }
+
 
 
 
