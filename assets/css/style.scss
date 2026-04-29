@@ -19,40 +19,48 @@ body {
 }
 
 /* =========================
-   HOME PAGE ONLY OVERRIDES
+   HOME PAGE HERO LAYOUT
    ========================= */
 
 .home .site-header {
   position: absolute;
   inset: 0 0 auto 0;
-  background: none;
+  height: 100vh;
+  pointer-events: none; /* allows clicks to pass unless overridden */
   z-index: 10;
 }
 
-/* Center KAHSUUN at the very top */
+/* Disable normal header layout on Home */
 .home .header-inner {
+  position: relative;
+  height: 100%;
   justify-content: center;
 }
 
+/* KAHSUUN — top center */
 .home .brand {
   position: absolute;
   top: 2rem;
   left: 50%;
   transform: translateX(-50%);
+  pointer-events: auto;
 }
 
-/* Push nav to bottom of video */
+/* NAV — bottom center */
 .home .nav {
   position: absolute;
   bottom: 2.5rem;
   left: 50%;
   transform: translateX(-50%);
+  display: flex;
   gap: 2rem;
+  pointer-events: auto;
 }
 
-/* Home video fills viewport */
+/* Video fills viewport */
 .home .home-video {
   height: 100vh;
+  overflow: hidden;
 }
 
 .home .home-video video {
@@ -60,7 +68,7 @@ body {
   height: 100%;
   object-fit: cover;
 }
-
+``
 /* VIDEOS PAGE HEADER IMAGE */
 
 .videos-hero {
