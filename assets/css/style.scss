@@ -55,6 +55,46 @@ body {
   }
 }
 
+/* SCROLL INDICATOR */
+
+.scroll-indicator {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+.scroll-indicator span {
+  width: 24px;
+  height: 24px;
+  border-left: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  transform: rotate(-45deg);
+  animation: scroll-bounce 1.8s infinite;
+  opacity: 0.6;
+}
+
+@keyframes scroll-bounce {
+  0% {
+    transform: rotate(-45deg) translate(0, 0);
+    opacity: 0.2;
+  }
+  50% {
+    transform: rotate(-45deg) translate(-6px, 6px);
+    opacity: 0.7;
+  }
+  100% {
+    transform: rotate(-45deg) translate(0, 0);
+    opacity: 0.2;
+  }
+}
+
+/* Mobile: slightly bigger tap hint */
+@media (max-width: 768px) {
+  .scroll-indicator span {
+    width: 28px;
+    height: 28px;
+  }
+}
 
 /* FILM PAGE */
 
