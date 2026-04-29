@@ -121,30 +121,34 @@ a.photo-card.full-row img {
   }
 }
 
+
 /* ABOUT PHOTO */
 .about-photo {
   display: flex;
   justify-content: center;
-  margin: 4rem 0;
+
   width: 100%;
-  overflow: hidden;              /* ✅ prevents bleed into header/nav */
+  margin: 4rem 0;
+
+  /* ✅ Reserve space for the expanded image */
+  padding-bottom: 400px;   /* adjust if you change scale */
 }
 
 /* Image base state */
 .about-img {
-  width: 140px;                  /* small by default */
+  width: 140px;
   height: auto;
   cursor: zoom-in;
 
   transition: transform 0.35s ease, opacity 0.2s ease;
   transform: scale(1);
-  transform-origin: top center;  /* ✅ only grows DOWN */
+  transform-origin: top center;
 }
 
-/* Hover expand — SIMPLE and STABLE */
+/* Hover expand */
 @media (hover: hover) {
   .about-img:hover {
-    transform: scale(4.5);       /* adjust size here */
+    transform: scale(4.5);
     cursor: zoom-out;
     opacity: 0.95;
   }
