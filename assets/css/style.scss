@@ -117,35 +117,32 @@ body {
   }
 }
 
-
-
 /* ABOUT PHOTO */
 .about-photo {
   display: flex;
   justify-content: center;
   margin: 4rem 0;
-  width: 100%
+  width: 100%;
 }
 
-/* Base (small) state */
+/* Base state */
 .about-photo img {
   width: 140px;
   height: auto;
   cursor: zoom-in;
-  transition: width 0.35s ease, opacity 0.2s ease;
+
+  transition: transform 0.35s ease, opacity 0.2s ease;
+  transform-origin: center center;
 }
 
-/* Apply hover behavior ONLY on devices that support hover */
+/* Hover expansion — NO layout change */
 @media (hover: hover) {
   .about-photo img:hover {
-    width: 60%;
-    max-width: 720px;
+    transform: scale(4.2);   /* adjust until visually right */
     cursor: zoom-out;
     opacity: 0.95;
   }
 }
-
-
 
 
 /* SITE HEADER */
