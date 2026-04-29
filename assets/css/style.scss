@@ -18,55 +18,39 @@ body {
   font-display: swap;
 }
 
-/* =========================
-   HOME PAGE HERO LAYOUT
-   ========================= */
+/* HOME PAGE – SIMPLE STACKED LAYOUT */
 
 .home .site-header {
-  position: absolute;
-  inset: 0 0 auto 0;
-  height: 100vh;
-  pointer-events: none; /* allows clicks to pass unless overridden */
-  z-index: 10;
+  position: static;
 }
 
-/* Disable normal header layout on Home */
+/* Center KAHSUUN at top */
 .home .header-inner {
-  position: relative;
-  height: 100%;
-  justify-content: center;
-}
-
-/* KAHSUUN — top center */
-.home .brand {
-  position: absolute;
-  top: 2rem;
-  left: 50%;
-  transform: translateX(-50%);
-  pointer-events: auto;
-}
-
-/* NAV — bottom center */
-.home .nav {
-  position: absolute;
-  bottom: 2.5rem;
-  left: 50%;
-  transform: translateX(-50%);
   display: flex;
-  gap: 2rem;
-  pointer-events: auto;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
 }
 
-/* Video fills viewport */
+/* Video sits UNDER KAHSUUN */
 .home .home-video {
-  height: auto;
-  max-height: 60vh;
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
 }
 
+/* Small, centered video */
 .home .home-video video {
-  width: 50%;
+  width: 480px;          /* adjust as needed */
+  max-width: 90vw;
   height: auto;
   object-fit: contain;
+}
+
+/* Tabs directly under video */
+.home .nav {
+  margin-top: 1.5rem;
+  justify-content: center;
 }
 
 /* VIDEOS PAGE HEADER IMAGE */
