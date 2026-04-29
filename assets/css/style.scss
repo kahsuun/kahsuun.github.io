@@ -117,42 +117,43 @@ body {
   }
 }
 
-
-
-/* ABOUT PHOTO SECTION */
+/* ABOUT PHOTO */
 .about-photo {
   display: flex;
   justify-content: center;
   margin: 4rem 0;
+  width: 100%;
 }
 
-/* Fixed hover frame — defines max expansion area */
+/* This frame defines the *max* visual area the photo is allowed to grow within */
 .about-photo-frame {
-  width: 720px;          /* max expanded width */
-  max-width: 100%;
+  width: min(720px, 100%);     /* stays inside your page padding */
   display: flex;
   justify-content: center;
 }
 
-/* Image base state (small) */
+/* Small by default */
 .about-photo-frame img {
   width: 140px;
   height: auto;
   cursor: zoom-in;
 
+  /* Smooth + stable animation */
   transition: transform 0.35s ease, opacity 0.2s ease;
   transform: scale(1);
-  transform-origin: center center;
+  transform-origin: top center; /* ✅ grows DOWNWARD, not up into the header */
+  will-change: transform;
 }
 
-/* Hover expansion — desktop only */
+/* Hover expand (desktop only) */
 @media (hover: hover) {
   .about-photo-frame:hover img {
-    transform: scale(5.2);   /* tune size here */
+    transform: scale(5.15);    /* 140px * 5.15 ≈ 721px (fits the 720px frame) */
     cursor: zoom-out;
     opacity: 0.95;
   }
 }
+
 
 
 /* SITE HEADER */
