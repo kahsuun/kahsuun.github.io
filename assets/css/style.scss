@@ -95,7 +95,10 @@ body {
   display: flex;
   justify-content: center;
 }
-
+.photo-card.full-row a {
+  display: block;
+  width: 100%;
+}
 /* Wide thumbnail sizing */
 .photo-card.full-row img {
   width: 100%;
