@@ -18,41 +18,41 @@ body {
   font-display: swap;
 }
 
-/* HOME PAGE – SIMPLE STACKED LAYOUT */
+/* HOME PAGE – SIMPLE STACK */
 
 .home .site-header {
   position: static;
 }
 
-/* Center KAHSUUN at top */
+/* Stack KAHSUUN and tabs vertically + center */
 .home .header-inner {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1.5rem;
+  gap: 1.25rem;
 }
 
-/* Video sits UNDER KAHSUUN */
+/* Center tabs under KAHSUUN */
+.home .nav {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 0;
+}
+
+/* Video comes after header, centered */
 .home .home-video {
   display: flex;
   justify-content: center;
-  margin-top: 1.5rem;
+  margin-top: 2rem;
 }
 
-/* Small, centered video */
 .home .home-video video {
-  width: 450px;          /* adjust as needed */
+  width: 450px;
   max-width: 90vw;
   height: auto;
   object-fit: contain;
 }
-
-/* Tabs directly under video */
-.home .nav {
-  margin-top: 1.5rem;
-  justify-content: center;
-}
-
 
 
 
