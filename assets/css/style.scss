@@ -117,44 +117,35 @@ body {
   }
 }
 
+
 /* ABOUT PHOTO */
 .about-photo {
   display: flex;
   justify-content: center;
   margin: 4rem 0;
   width: 100%;
+  overflow: hidden;              /* ✅ prevents bleed into header/nav */
 }
 
-/* This frame defines the *max* visual area the photo is allowed to grow within */
-.about-photo-frame {
-  width: min(720px, 100%);     /* stays inside your page padding */
-  display: flex;
-  justify-content: center;
-}
-
-/* Small by default */
-.about-photo-frame img {
-  width: 140px;
+/* Image base state */
+.about-img {
+  width: 140px;                  /* small by default */
   height: auto;
   cursor: zoom-in;
 
-  /* Smooth + stable animation */
   transition: transform 0.35s ease, opacity 0.2s ease;
   transform: scale(1);
-  transform-origin: top center; /* ✅ grows DOWNWARD, not up into the header */
-  will-change: transform;
+  transform-origin: top center;  /* ✅ only grows DOWN */
 }
 
-/* Hover expand (desktop only) */
+/* Hover expand — SIMPLE and STABLE */
 @media (hover: hover) {
-  .about-photo-frame:hover img {
-    transform: scale(5.15);    /* 140px * 5.15 ≈ 721px (fits the 720px frame) */
+  .about-img:hover {
+    transform: scale(5.2);       /* adjust size here */
     cursor: zoom-out;
     opacity: 0.95;
   }
 }
-
-
 
 /* SITE HEADER */
 
