@@ -32,6 +32,30 @@ body {
   border-radius: 16px;
 }
 
+
+/* VIDEOS PAGE HEADER IMAGE */
+
+.videos-hero {
+  max-width: 1200px;
+  margin: 4rem auto 3rem;
+  padding: 0 2rem;
+}
+
+.videos-hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 16px;
+}
+
+/* Mobile spacing tweak */
+@media (max-width: 768px) {
+  .videos-hero {
+    margin-top: 2rem;
+  }
+}
+
+
 /* FILM PAGE */
 
 .film-list {
