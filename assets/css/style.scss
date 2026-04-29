@@ -130,9 +130,14 @@ body {
   cursor: pointer;
   transition: width 0.35s ease;
 }
-
+.about-photo img:hover {
+  opacity: 0.9;
+}
 /* Expanded state */
 .about-photo img.expanded {
+  transition: width 0.35s ease, opacity 0.2s ease;
+  width: min(60%, 720px);
+  cursor: zoom-out;
   width: 60%;
   max-width: 720px;
 }
