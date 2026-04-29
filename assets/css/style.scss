@@ -73,7 +73,7 @@ body {
 
 .photo-card {
   width: 100%;
-  max-width: 1000px;
+  max-width: 420px;
 
   display: flex;          /* ✅ centers contents */
   justify-content: center;
@@ -97,7 +97,7 @@ body {
 /* Wide thumbnail sizing */
 .photo-card.full-row img {
   width: 100%;
-  max-width: 900px;       /* centered, visually balanced */
+  max-width: 1200px;       /* centered, visually balanced */
 }
 
 /* ✅ Mobile */
