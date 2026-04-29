@@ -72,8 +72,7 @@ body {
 }
 
 
-/* PHOTO PAGE */
-
+/* PHOTO GRID */
 .photo-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -84,51 +83,43 @@ body {
   justify-items: center;
 }
 
-.photo-card {
+/* Normal thumbnails */
+a.photo-card {
   width: 100%;
   max-width: 420px;
-  display: flex;
-  justify-content: center;
+  display: block;
 }
 
-/* Images */
-.photo-card img {
+/* Thumbnail images */
+a.photo-card img {
   width: 100%;
   height: auto;
   display: block;
   border-radius: 12px;
 }
 
-/* ✅ Third PDF: full-width row + centered */
-.photo-card.full-row {
-  grid-column: 1 / -1;
-  width: 100%;
-  max-width: 100%;
-  display: flex;
-  justify-content: center;
+/* ✅ WIDE / THIRD ITEM */
+a.photo-card.full-row {
+  grid-column: 1 / -1;     /* spans both columns */
+  max-width: 100%;         /* removes 420px cap */
+  justify-self: center;    /* centers in grid */
 }
 
-.photo-card.full-row a {
-  width: 100%;
-  display: block;
-}
-
-.photo-card.full-row img {
-  width: 100%;
+a.photo-card.full-row img {
+  width: 100%;             /* fills padded grid width */
   max-width: 100%;
 }
 
-/* ✅ Mobile */
+/* Mobile */
 @media (max-width: 768px) {
   .photo-grid {
     grid-template-columns: 1fr;
   }
 
-  .photo-card.full-row {
+  a.photo-card.full-row {
     grid-column: auto;
   }
 }
-
 
 /* ABOUT PHOTO */
 .about-photo {
