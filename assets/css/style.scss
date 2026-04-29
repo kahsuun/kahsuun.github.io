@@ -97,7 +97,7 @@ body {
 /* Wide thumbnail sizing */
 .photo-card.full-row img {
   width: 100%;
-  max-width: 1200px;       /* centered, visually balanced */
+  max-width: none;       /* centered, visually balanced */
 }
 
 /* ✅ Mobile */
