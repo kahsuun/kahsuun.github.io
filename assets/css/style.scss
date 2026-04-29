@@ -141,6 +141,15 @@ body {
   opacity: 0.95;
 }
 
+@media (hover: hover) {
+  .about-photo img:hover {
+    width: 60%;
+    max-width: 720px;
+    cursor: zoom-out;
+  }
+}
+
+
 
 /* SITE HEADER */
 
