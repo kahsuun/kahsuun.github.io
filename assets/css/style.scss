@@ -18,20 +18,48 @@ body {
   font-display: swap;
 }
 
-/* HOME PAGE VIDEO — CENTERED, MEDIUM SIZE */
-.home-video {
-  max-width: 450px;     /* controls size — medium, cinematic */
-  margin: 4rem auto;    /* centers horizontally + adds breathing room */
-  padding: 0 2rem;      /* keeps space from edges on small screens */
+/* =========================
+   HOME PAGE ONLY OVERRIDES
+   ========================= */
+
+.home .site-header {
+  position: absolute;
+  inset: 0 0 auto 0;
+  background: none;
+  z-index: 10;
 }
 
-.home-video video {
+/* Center KAHSUUN at the very top */
+.home .header-inner {
+  justify-content: center;
+}
+
+.home .brand {
+  position: absolute;
+  top: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Push nav to bottom of video */
+.home .nav {
+  position: absolute;
+  bottom: 2.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  gap: 2rem;
+}
+
+/* Home video fills viewport */
+.home .home-video {
+  height: 100vh;
+}
+
+.home .home-video video {
   width: 100%;
-  height: auto;
-  display: block;
-  border-radius: 16px;
+  height: 100%;
+  object-fit: cover;
 }
-
 
 /* VIDEOS PAGE HEADER IMAGE */
 
