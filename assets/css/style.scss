@@ -145,7 +145,7 @@ body {
 /* Hover ON CONTAINER ONLY */
 @media (hover: hover) {
   .about-photo:hover img {
-    transform: scale(5.5);        /* adjust size here */
+    transform: scale(4);        /* adjust size here */
     opacity: 0.95;
   }
 }
