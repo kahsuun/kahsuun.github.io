@@ -119,33 +119,37 @@ body {
 
 
 
-/* ABOUT PHOTO */
+/* ABOUT PHOTO SECTION */
 .about-photo {
   display: flex;
   justify-content: center;
-  align-items: center;
-
-  width: 100%;
-  min-height: 900px;              /* ✅ big enough to contain expanded image */
   margin: 4rem 0;
 }
 
-/* Image base state */
-.about-photo img {
+/* Fixed hover frame — defines max expansion area */
+.about-photo-frame {
+  width: 720px;          /* max expanded width */
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* Image base state (small) */
+.about-photo-frame img {
   width: 140px;
   height: auto;
+  cursor: zoom-in;
 
   transition: transform 0.35s ease, opacity 0.2s ease;
   transform: scale(1);
   transform-origin: center center;
-
-  pointer-events: none;           /* ✅ CRITICAL: hover NEVER attaches to image */
 }
 
-/* Hover ON CONTAINER ONLY */
+/* Hover expansion — desktop only */
 @media (hover: hover) {
-  .about-photo:hover img {
-    transform: scale(4);        /* adjust size here */
+  .about-photo-frame:hover img {
+    transform: scale(5.2);   /* tune size here */
+    cursor: zoom-out;
     opacity: 0.95;
   }
 }
