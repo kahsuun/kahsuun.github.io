@@ -72,7 +72,8 @@ body {
 }
 
 
-/* PHOTO GRID */
+/* PHOTO PAGE */
+
 .photo-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -83,7 +84,6 @@ body {
   justify-items: center;
 }
 
-/* Normal photo cards */
 .photo-card {
   width: 100%;
   max-width: 420px;
@@ -91,7 +91,7 @@ body {
   justify-content: center;
 }
 
-/* Normal images */
+/* Images */
 .photo-card img {
   width: 100%;
   height: auto;
@@ -99,26 +99,23 @@ body {
   border-radius: 12px;
 }
 
-/* ✅ FULL-WIDTH / WIDE PDF CARD */
+/* ✅ Third PDF: full-width row + centered */
 .photo-card.full-row {
   grid-column: 1 / -1;
-  max-width: 100%;
   width: 100%;
+  max-width: 100%;
   display: flex;
-  justify-content: center;   /* ✅ centers wide image */
+  justify-content: center;
 }
 
-/* The link must fill the row */
 .photo-card.full-row a {
   width: 100%;
   display: block;
 }
 
-/* Wide thumbnail fills padded grid width */
 .photo-card.full-row img {
   width: 100%;
-  max-width: 100%;           /* ✅ key line */
-  border-radius: 12px;
+  max-width: 100%;
 }
 
 /* ✅ Mobile */
