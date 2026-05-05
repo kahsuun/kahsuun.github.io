@@ -18,71 +18,131 @@ body {
   font-display: swap;
 }
 
-/* HOME PAGE – SIMPLE STACK */
+/* =========================
+   HOME PAGE – BASE LAYOUT
+========================= */
 
+/* Make entire page a centered column */
 .home {
   display: flex;
   flex-direction: column;
-  align-items: center; 
+  align-items: center;
 }
+
+
+/* =========================
+   HEADER (KAHSUUN + TABS)
+========================= */
 
 .home .site-header {
   position: static;
 }
 
-/* Stack KAHSUUN and tabs vertically + center */
 .home .header-inner {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   text-align: center;
-  gap: 1.25rem;
-}
 
-/* Center tabs under KAHSUUN */
-.home .nav {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  margin: 0;
-}
-
-/* Video comes after header, centered */
-.home .home-video {
-  display: flex;
-  justify-content: center;
+  /* KEY: keeps everything aligned together */
   width: 100%;
+  max-width: 420px;
+  margin: 0 auto;
+
+  /* tight spacing like you want */
+  gap: 0.4rem;
 }
 
-.home .home-video video {
-  display: block;
-  width: 100%;
-  max-width: 450px;
-  height: auto;
-}
-
+/* KAHSUUN */
 .home .brand {
   text-align: center;
   width: 100%;
 }
 
 .home .brand a {
-  font-size: 3rem;      /* adjust as needed */
   display: inline-block;
+  font-size: 1.8rem;
+  line-height: 1.1;
 }
 
 
-.home .header-inner {
-  width: 100%;
-  max-width: 600px;     /* keeps everything tight and centered */
-  margin: 0 auto;
+/* =========================
+   NAV (FILM PHOTO ABOUT)
+========================= */
+
+.home .nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 1.5rem;     /* spacing between words */
+  margin: 0;
 }
+
+.home .nav a {
+  font-size: 0.9rem;
+  letter-spacing: 0.04em;
+}
+
+
+/* =========================
+   MAIN + VIDEO
+========================= */
 
 .home main {
-  display: flex;
-  flex-directoin: column;
-  align-items: center;
   width: 100%;
+
+  /* IMPORTANT: match header width */
+  max-width: 420px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Video wrapper */
+.home .home-video {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+
+  margin-top: 0.75rem;
+}
+
+/* Video */
+.home .home-video video {
+  display: block;
+
+  width: 100%;
+  max-width: 100%;
+
+  height: auto;
+}
+
+
+
+/* =========================
+   MOBILE TUNING
+========================= */
+
+@media (max-width: 600px) {
+
+  /* slightly smaller KAHSUUN */
+  .home .brand a {
+    font-size: 1.5rem;
+  }
+
+  /* slightly tighter tabs */
+  .home .nav {
+    gap: 1rem;
+  }
+
+  .home .nav a {
+    font-size: 0.85rem;
+  }
+
 }
 
 
