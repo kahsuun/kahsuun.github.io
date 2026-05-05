@@ -142,6 +142,13 @@ body {
   .home .nav a {
     font-size: 0.85rem;
   }
+  
+  /* OPTIONAL: optical centering tweak
+     (only if video still feels off) */
+  .home .home-video video {
+    transform: translateX(-3px);
+  }
+
 
 }
 
