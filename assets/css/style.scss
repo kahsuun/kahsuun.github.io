@@ -54,6 +54,21 @@ body {
   object-fit: contain;
 }
 
+.home .brand {
+  text-align: center;
+}
+
+.home .brand a {
+  font-size: 2rem;      /* adjust as needed */
+  display: inline-block;
+}
+
+
+.home .header-inner {
+  width: 100%;
+  max-width: 600px;     /* keeps everything tight and centered */
+  margin: 0 auto;
+}
 
 
 /* VIDEOS PAGE HEADER IMAGE */
