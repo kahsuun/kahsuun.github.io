@@ -129,11 +129,6 @@ body {
 
 @media (max-width: 600px) {
 
-  /* slightly smaller KAHSUUN */
-  .home .brand a {
-    font-size: 1.5rem;
-  }
-
   /* slightly tighter tabs */
   .home .nav {
     gap: 1rem;
@@ -141,12 +136,6 @@ body {
 
   .home .nav a {
     font-size: 0.85rem;
-  }
-  
-  /* OPTIONAL: optical centering tweak
-     (only if video still feels off) */
-  .home .home-video video {
-    transform: translateX(-3px);
   }
 
 
