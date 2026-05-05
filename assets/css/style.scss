@@ -129,6 +129,10 @@ body {
 
 @media (max-width: 600px) {
 
+  .home .brand a {
+    font-size: 3rem;
+  }
+
   /* slightly tighter tabs */
   .home .nav {
     gap: 1rem;
