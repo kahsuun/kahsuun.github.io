@@ -22,6 +22,15 @@ body {
    HOME PAGE – BASE LAYOUT
 ========================= */
 
+body.home {
+  margin: 0;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center
+  align-items: center;
+}
+
 /* Make entire page a centered column */
 .home {
   display: flex;
