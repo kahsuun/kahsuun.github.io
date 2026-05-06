@@ -27,9 +27,30 @@ body.home {
   height: 100vh;
 
   display: flex;
-  justify-content: center
+  justify-content: center;
   align-items: center;
 }
+
+/* =========================
+   HOME FADE-IN
+========================= */
+
+body.home {
+  opacity: 0;
+  animation: fadeIn 1.2s ease forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 
 /* Make entire page a centered column */
 .home {
@@ -48,6 +69,7 @@ body.home {
   max-width: 420px;
 
   gap: 0.5rem;
+}
 
 
 /* =========================
